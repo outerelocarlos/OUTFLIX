@@ -1,0 +1,31 @@
+.catalogue > div {
+  background-color: #37393f;
+  border-radius: $border-radius-common;
+  @include shadow(20px, 5px, rgba(0, 0, 0, 0.75));
+  padding: 30px 30px 35px;
+  text-align: center;
+
+  .card {
+    background-color: #1c1e22;
+  }
+}
+
+.catalogue > div:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.deckTitle {
+  color: rgb(200, 200, 200);
+  display: inline-block;
+  margin: 0 auto 35px;
+
+  @include scale(1);
+  @include transition(0.075s);
+}
+
+.deckTitle:hover {
+  cursor: pointer;
+  color: rgb(248, 206, 11);
+  @include scale(1.15);
+  @include transition(0.075s);
+}

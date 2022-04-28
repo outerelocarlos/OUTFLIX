@@ -1,0 +1,179 @@
+#movie {
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 40px;
+    color: rgb(248, 206, 11);
+  }
+  button {
+    position: absolute;
+    top: 0;
+    border: 2px solid black;
+    border-radius: $border-radius-common;
+    font-weight: 700;
+    opacity: 0.5;
+    @include transition(0.2s);
+  }
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: $border-radius-common;
+  @include shadow(5px, 1px, rgba(248, 206, 11, 0.5));
+}
+
+.movieOverview {
+  margin-top: 20px;
+  h3 {
+    display: inline-block;
+    background-color: #1c1e22;
+    font-size: 20px;
+    margin-left: 50px;
+    padding: 0 20px;
+    color: rgb(248, 206, 11);
+  }
+  p {
+    border: 1px solid rgb(248, 206, 11);
+    border-radius: 12px;
+    padding: 20px 20px;
+    margin-top: -20px;
+    text-align: justify;
+  }
+}
+
+.movieDetails {
+  margin-top: 40px;
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 12px;
+    text-decoration: underline;
+  }
+
+  > div {
+    border-radius: 12px;
+    @include shadow(20px, 5px, rgba(0, 0, 0, 0.75));
+
+    width: 100%;
+    margin: 0 auto;
+
+    > div {
+      width: 50%;
+      padding: 20px;
+    }
+  }
+
+  ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 5px 20px;
+    }
+    li:first-child {
+      padding-top: 20px;
+    }
+    li:last-child {
+      padding-bottom: 20px;
+    }
+  }
+  p {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+  img:hover {
+    cursor: pointer;
+    @include scale(1.1);
+  }
+}
+
+#genres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a {
+    text-decoration: underline;
+    @include transition(0.2s);
+  }
+  a:hover {
+    cursor: pointer;
+    color: rgb(248, 206, 11);
+    @include transition(0.2s);
+  }
+}
+
+#cast,
+#crew,
+#movieImages {
+  width: 100%;
+  margin: 50px auto 0px;
+  padding: 10px;
+  border: 0.5px solid black;
+  border-radius: $border-radius-common;
+  background-color: #37393f;
+  @include shadow(20px, 5px, rgba(0, 0, 0, 0.75));
+}
+
+#movieImages img {
+  margin: 15px auto;
+}
+
+#movieImages:hover {
+  cursor: pointer;
+}
+
+#cast,
+#crew {
+  h3 {
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto 30px;
+    color: rgb(230, 230, 230);
+    @include coolShadow(rgb(0, 0, 0));
+  }
+
+  .card {
+    background-color: #1c1e22;
+    margin: 0 auto 30px;
+    padding-bottom: 16px;
+  }
+
+  img {
+    margin-bottom: 16px;
+  }
+
+  h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+hr {
+  display: block;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  margin: 5px auto !important;
+}
+
+#reviews {
+  margin-top: 30px;
+}
+
+#similarMovies {
+  margin-top: 50px;
+  padding-left: 20%;
+  padding-right: 20%;
+}

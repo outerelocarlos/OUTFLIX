@@ -1,0 +1,161 @@
+$border-radius-common: 6px;
+@import "mixin";
+@import "header";
+@import "footer";
+@import "catalogue";
+@import "detail";
+@import "movieRating";
+
+.container {
+  padding: 0;
+}
+
+main {
+  display: none;
+}
+
+#loading {
+  width: 50px;
+  margin: 25px auto;
+  display: block;
+}
+
+.jumbotron {
+  background-color: #1c1e22;
+  border: 0.5px solid black;
+  border-top: none;
+  border-top-style: double;
+  border-radius: 0 0 $border-radius-common $border-radius-common;
+
+  margin: 0;
+  padding: 30px 30px 45px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  margin-top: 20px;
+  padding: 10px 10px 0px 10px;
+}
+
+.deck:first-of-type {
+  margin-top: -20px;
+}
+
+.card,
+img:not(#logo):not(#imago):not(.mdb):not(#loading):not(.thumbnail) {
+  width: 100%;
+  border-radius: $border-radius-common;
+  @include shadow(10px, 3px, black);
+  @include transition(0.3s);
+}
+
+.card:hover {
+  cursor: pointer;
+  @include shadow(5px, 2px, rgb(248, 206, 11));
+  @include transition(0.2s);
+}
+
+#listElement {
+  margin: 20px 15px 10px;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  @include shadow(15px, 5px, black);
+  @include transition(0.2s);
+
+  img {
+    @include shadow(15px, 5px, black);
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+#listElement:hover {
+  cursor: pointer;
+  @include shadow(9px, 3px, rgb(248, 206, 11));
+}
+
+h2 {
+  margin: 25px auto;
+  border-top-style: double;
+  border-bottom-style: double;
+  padding: 5px 20px 10px;
+}
+
+.jumbotron > h2:not(#similarMovies) {
+  margin: 0 auto 35px;
+}
+
+h5 {
+  color: rgb(200, 200, 200);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.deck h5 {
+  text-align: center;
+  margin: 12px auto;
+}
+
+.fa-external-link-alt {
+  position: absolute;
+  top: 23px;
+  right: 18px;
+  font-size: 30px;
+
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 6px;
+  padding: 2px;
+
+  opacity: 0.2;
+  @include transition(0.2s);
+}
+
+#listPopup {
+  font-size: 35px;
+}
+
+.fa-external-link-alt:hover,
+#movie button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  @include transition(0.2s);
+}
+
+.pagination {
+  margin: 35px auto 0px;
+}
+
+@media (max-width: 991px) {
+  #logo {
+    display: none;
+  }
+
+  #imago {
+    display: block;
+  }
+
+  nav > ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 42px;
+  }
+
+  .navbar-collapse {
+    border-top-style: double;
+  }
+
+  .navbar-nav .active {
+    border-radius: 0;
+  }
+}

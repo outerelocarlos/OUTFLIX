@@ -1,0 +1,674 @@
+@charset "UTF-8";
+header {
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.navbar {
+  padding: 0;
+  border: none !important;
+}
+
+.navbar-brand {
+  border: none;
+}
+
+#logo {
+  height: 92px;
+  margin-left: -20px;
+}
+
+#imago {
+  height: 80px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+h1,
+#imago {
+  display: none;
+}
+
+.toggle-container {
+  margin-left: 30px;
+}
+
+.toggle-btn {
+  width: 40px;
+  height: 80px;
+  background: gray;
+  border-radius: 30px;
+  padding: 5px;
+  transition: 0.2s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+.toggle-btn:hover {
+  -o-box-shadow: 0px 0px 20px 1px black;
+  box-shadow: 0px 0px 20px 1px black;
+  transition: 0.2s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+.inner-circle {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 30px;
+}
+
+.active > .inner-circle {
+  margin-top: 40px;
+}
+
+.toggle-modes {
+  height: 80px;
+  padding: 6px 0;
+}
+.toggle-modes p {
+  color: black;
+  text-shadow: 1.5px 0 0 #b4b4b4, -1.5px 0 0 #b4b4b4, 0 1.5px 0 #b4b4b4, 0 -1.5px 0 #b4b4b4, 0.75px 0.75px #b4b4b4, -0.75px -0.75px 0 #b4b4b4, 0.75px -0.75px 0 #b4b4b4, -0.75px 0.75px 0 #b4b4b4;
+  margin: 0;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#searchText {
+  width: 200px;
+}
+
+nav {
+  background-color: black;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+nav > button {
+  height: 42px;
+}
+
+.fa-hamburger {
+  color: #b4b4b4;
+  cursor: pointer;
+  transition: 0.1s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.1s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.1s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.1s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+.fa-hamburger:hover {
+  transform: scale(1.1);
+  /*especifica la transformación a realizar sobre el elemento*/
+  -webkit-transform: scale(1.1);
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transform: scale(1.1);
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transform: scale(1.1);
+  /*compatibilidad con versiones anteriores de Opera*/
+  transition: 0.1s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.1s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.1s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.1s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+.list-inline {
+  margin: 0;
+}
+
+.list-inline-item {
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+  transition: 0.175s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.175s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.175s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.175s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0;
+}
+
+.active:not(.inner-circle) {
+  background-color: #828282;
+  color: black;
+  transition: 0.175s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.175s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.175s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.175s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+}
+footer p {
+  padding: 11px 0;
+  font-size: 14px;
+  color: white;
+  margin: 0 auto;
+}
+footer span {
+  font-weight: 700;
+}
+
+.catalogue > div {
+  background-color: #37393f;
+  border-radius: 6px;
+  -o-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  padding: 30px 30px 35px;
+  text-align: center;
+}
+.catalogue > div .card {
+  background-color: #1c1e22;
+}
+
+.catalogue > div:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.deckTitle {
+  color: #c8c8c8;
+  display: inline-block;
+  margin: 0 auto 35px;
+  transform: scale(1);
+  /*especifica la transformación a realizar sobre el elemento*/
+  -webkit-transform: scale(1);
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transform: scale(1);
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transform: scale(1);
+  /*compatibilidad con versiones anteriores de Opera*/
+  transition: 0.075s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.075s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.075s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.075s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+.deckTitle:hover {
+  cursor: pointer;
+  color: #f8ce0b;
+  transform: scale(1.15);
+  /*especifica la transformación a realizar sobre el elemento*/
+  -webkit-transform: scale(1.15);
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transform: scale(1.15);
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transform: scale(1.15);
+  /*compatibilidad con versiones anteriores de Opera*/
+  transition: 0.075s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.075s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.075s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.075s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+#movie h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 40px;
+  color: #f8ce0b;
+}
+#movie button {
+  position: absolute;
+  top: 0;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-weight: 700;
+  opacity: 0.5;
+  transition: 0.2s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 6px;
+  -o-box-shadow: 0px 0px 5px 1px rgba(248, 206, 11, 0.5);
+  box-shadow: 0px 0px 5px 1px rgba(248, 206, 11, 0.5);
+}
+
+.movieOverview {
+  margin-top: 20px;
+}
+.movieOverview h3 {
+  display: inline-block;
+  background-color: #1c1e22;
+  font-size: 20px;
+  margin-left: 50px;
+  padding: 0 20px;
+  color: #f8ce0b;
+}
+.movieOverview p {
+  border: 1px solid #f8ce0b;
+  border-radius: 12px;
+  padding: 20px 20px;
+  margin-top: -20px;
+  text-align: justify;
+}
+
+.movieDetails {
+  margin-top: 40px;
+}
+.movieDetails h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 12px;
+  text-decoration: underline;
+}
+.movieDetails > div {
+  border-radius: 12px;
+  -o-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  margin: 0 auto;
+}
+.movieDetails > div > div {
+  width: 50%;
+  padding: 20px;
+}
+.movieDetails ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.movieDetails ul li {
+  padding: 5px 20px;
+}
+.movieDetails ul li:first-child {
+  padding-top: 20px;
+}
+.movieDetails ul li:last-child {
+  padding-bottom: 20px;
+}
+.movieDetails p {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.movieDetails img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+.movieDetails img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  /*especifica la transformación a realizar sobre el elemento*/
+  -webkit-transform: scale(1.1);
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transform: scale(1.1);
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transform: scale(1.1);
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+#genres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#genres a {
+  text-decoration: underline;
+  transition: 0.2s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+#genres a:hover {
+  cursor: pointer;
+  color: #f8ce0b;
+  transition: 0.2s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+#cast,
+#crew,
+#movieImages {
+  width: 100%;
+  margin: 50px auto 0px;
+  padding: 10px;
+  border: 0.5px solid black;
+  border-radius: 6px;
+  background-color: #37393f;
+  -o-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+}
+
+#movieImages img {
+  margin: 15px auto;
+}
+
+#movieImages:hover {
+  cursor: pointer;
+}
+
+#cast h3,
+#crew h3 {
+  font-size: 35px;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto 30px;
+  color: #e6e6e6;
+  text-shadow: 1.5px 0 0 black, -1.5px 0 0 black, 0 1.5px 0 black, 0 -1.5px 0 black, 0.75px 0.75px black, -0.75px -0.75px 0 black, 0.75px -0.75px 0 black, -0.75px 0.75px 0 black;
+}
+#cast .card,
+#crew .card {
+  background-color: #1c1e22;
+  margin: 0 auto 30px;
+  padding-bottom: 16px;
+}
+#cast img,
+#crew img {
+  margin-bottom: 16px;
+}
+#cast h5,
+#crew h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+hr {
+  display: block;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  width: 75%;
+  margin: 5px auto !important;
+}
+
+#reviews {
+  margin-top: 30px;
+}
+
+#similarMovies {
+  margin-top: 50px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.movieRating {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+.movieRating p {
+  margin: -5px auto 0;
+  font-weight: 700;
+}
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+}
+
+.stars-outer::before {
+  content: "☆☆☆☆☆";
+  font-size: 40px;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-inner::before {
+  content: "★★★★★";
+  font-size: 40px;
+  color: #f8ce0b;
+}
+
+.container {
+  padding: 0;
+}
+
+main {
+  display: none;
+}
+
+#loading {
+  width: 50px;
+  margin: 25px auto;
+  display: block;
+}
+
+.jumbotron {
+  background-color: #1c1e22;
+  border: 0.5px solid black;
+  border-top: none;
+  border-top-style: double;
+  border-radius: 0 0 6px 6px;
+  margin: 0;
+  padding: 30px 30px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  margin-top: 20px;
+  padding: 10px 10px 0px 10px;
+}
+
+.deck:first-of-type {
+  margin-top: -20px;
+}
+
+.card,
+img:not(#logo):not(#imago):not(.mdb):not(#loading):not(.thumbnail) {
+  width: 100%;
+  border-radius: 6px;
+  -o-box-shadow: 0px 0px 10px 3px black;
+  box-shadow: 0px 0px 10px 3px black;
+  transition: 0.3s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.3s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.3s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.3s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+.card:hover {
+  cursor: pointer;
+  -o-box-shadow: 0px 0px 5px 2px #f8ce0b;
+  box-shadow: 0px 0px 5px 2px #f8ce0b;
+  transition: 0.2s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+#listElement {
+  margin: 20px 15px 10px;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  -o-box-shadow: 0px 0px 15px 5px black;
+  box-shadow: 0px 0px 15px 5px black;
+  transition: 0.2s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+#listElement img {
+  -o-box-shadow: 0px 0px 15px 5px black;
+  box-shadow: 0px 0px 15px 5px black;
+}
+#listElement h2 {
+  margin-top: 0;
+}
+
+#listElement:hover {
+  cursor: pointer;
+  -o-box-shadow: 0px 0px 9px 3px #f8ce0b;
+  box-shadow: 0px 0px 9px 3px #f8ce0b;
+}
+
+h2 {
+  margin: 25px auto;
+  border-top-style: double;
+  border-bottom-style: double;
+  padding: 5px 20px 10px;
+}
+
+.jumbotron > h2:not(#similarMovies) {
+  margin: 0 auto 35px;
+}
+
+h5 {
+  color: #c8c8c8;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.deck h5 {
+  text-align: center;
+  margin: 12px auto;
+}
+
+.fa-external-link-alt {
+  position: absolute;
+  top: 23px;
+  right: 18px;
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 6px;
+  padding: 2px;
+  opacity: 0.2;
+  transition: 0.2s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+#listPopup {
+  font-size: 35px;
+}
+
+.fa-external-link-alt:hover,
+#movie button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
+  /*animación de la duración especificada dada al asociar o reasociar al elemento las propiedades que lo definen*/
+  -webkit-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Chrome y Safari*/
+  -moz-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Firefox*/
+  -o-transition: 0.2s;
+  /*compatibilidad con versiones anteriores de Opera*/
+}
+
+.pagination {
+  margin: 35px auto 0px;
+}
+
+@media (max-width: 991px) {
+  #logo {
+    display: none;
+  }
+
+  #imago {
+    display: block;
+  }
+
+  nav > ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 42px;
+  }
+
+  .navbar-collapse {
+    border-top-style: double;
+  }
+
+  .navbar-nav .active {
+    border-radius: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,125 @@
+header {
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.navbar {
+  padding: 0;
+  border: none !important;
+}
+
+.navbar-brand {
+  border: none;
+}
+
+#logo {
+  height: 92px;
+  margin-left: -20px;
+}
+
+#imago {
+  height: 80px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+h1,
+#imago {
+  display: none;
+}
+
+.toggle-container {
+  margin-left: 30px;
+}
+
+.toggle-btn {
+  width: 40px;
+  height: 80px;
+  background: gray;
+  border-radius: 30px;
+  padding: 5px;
+  @include transition(0.2s);
+}
+
+.toggle-btn:hover {
+  @include shadow(20px, 1px, black);
+  @include transition(0.2s);
+}
+
+.inner-circle {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 30px;
+}
+
+.active > .inner-circle {
+  margin-top: 40px;
+}
+
+.toggle-modes {
+  height: 80px;
+  padding: 6px 0;
+  p {
+    color: black;
+    @include coolShadow(rgb(180, 180, 180));
+    margin: 0;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+#searchText {
+  width: 200px;
+}
+
+nav {
+  background-color: black;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+nav > button {
+  height: 42px;
+}
+
+.fa-hamburger {
+  color: rgb(180, 180, 180);
+  cursor: pointer;
+  @include transition(0.1s);
+}
+
+.fa-hamburger:hover {
+  @include scale(1.1);
+  @include transition(0.1s);
+}
+
+.list-inline {
+  margin: 0;
+}
+
+.list-inline-item {
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  font-weight: 700;
+  text-align: center;
+  @include transition(0.175s);
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0;
+}
+
+.active:not(.inner-circle) {
+  background-color: rgb(130, 130, 130);
+  color: black;
+  @include transition(0.175s);
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}

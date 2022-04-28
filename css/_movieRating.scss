@@ -1,0 +1,35 @@
+// Estilo asignado a la puntuación de la película
+.movieRating {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  p {
+    margin: -5px auto 0;
+    font-weight: 700;
+  }
+}
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+}
+
+.stars-outer::before {
+  content: "\2606 \2606 \2606 \2606 \2606";
+  font-size: 40px;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-inner::before {
+  content: "\2605 \2605 \2605 \2605 \2605";
+  font-size: 40px;
+  color: rgb(248, 206, 11);
+}

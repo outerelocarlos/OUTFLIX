@@ -1,0 +1,343 @@
+<!-- Definición de tipo de documento, en este caso HTML5 -->
+<!DOCTYPE html>
+<!-- Lenguaje general del documento, en este caso inglés -->
+<html lang="en">
+  <head>
+    <!-- Información adicional: set de carácteres -->
+    <meta charset="UTF-8" />
+
+    <!-- Aquí se debe escribir un título apropiado al contenido del documento -->
+    <title>OUTFLIX | Genre Page</title>
+
+    <!-- Aquí se debe escribir una descripción del contenido del documento -->
+    <meta name="description" content="Results for the selected genre" />
+
+    <!-- Se desactiva el zoom-out dado en dispositivos móviles para un correcto diseño adaptativo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- En pos de una mejor compatibilidad con IE9 y IE8 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Se importa un template personalizado de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/slate/bootstrap.min.css"
+    />
+
+    <!-- Se importan las hojas de estilo del proyecto -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+
+    <!-- Se importa el Web App Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/assets/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/assets/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/assets/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/assets/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <!-- Etiqueta semántica de encabezado, concebido estructuralmente como navbar -->
+    <header class="navbar navbar-default">
+      <div class="container d-flex flex-column flex-sm-row">
+        <div
+          class="navbar-brand d-flex flex-row justify-content-start align-items-center"
+        >
+          <a href="index.html"
+            ><img src="/assets/logo.png" id="logo" alt="App Logo"
+          /></a>
+          <a href="index.html"
+            ><img src="/assets/imago.svg" id="imago" alt="App Logo"
+          /></a>
+          <h1>OUTFLIX</h1>
+          <div class="d-flex flex-row justify-content-end align-items-center">
+            <div class="toggle-container">
+              <div class="toggle-btn">
+                <div class="inner-circle"></div>
+              </div>
+            </div>
+            <div
+              class="toggle-modes d-flex flex-column justify-content-between"
+            >
+              <p>Movies</p>
+              <p>TV Shows</p>
+            </div>
+          </div>
+        </div>
+        <form
+          class="form-inline d-flex flex-column flex-sm-row"
+          id="searchForm"
+        >
+          <input
+            class="form-control mr-sm-2"
+            id="searchText"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+
+      <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <i class="navbar-toggler-icon fas fa-hamburger"></i>
+          </button>
+
+          <div class="navbar-collapse collapse">
+            <ul class="navbar-nav list-inline">
+              <li onclick="location.href='index.html'" class="list-inline-item">
+                Index
+              </li>
+              <li
+                onclick="location.href='nowplaying.html'"
+                class="list-inline-item"
+              >
+                Now Playing
+              </li>
+              <li
+                onclick="location.href='trending.html'"
+                class="list-inline-item"
+              >
+                Trending
+              </li>
+              <li
+                onclick="location.href='toprated.html'"
+                class="list-inline-item"
+              >
+                Top Rated
+              </li>
+              <li
+                onclick="location.href='upcoming.html'"
+                class="list-inline-item"
+              >
+                Upcoming
+              </li>
+              <li
+                onclick="location.href='genres.html'"
+                class="list-inline-item"
+              >
+                By Genre
+              </li>
+              <!--<li onclick="location.href='movie.html'" class="list-inline-item">
+                  Latest
+                </li>-->
+              <li class="list-inline-item">About Us</li>
+            </ul>
+          </div>
+
+          <ul class="list-inline">
+            <li class="list-inline-item" id="controllerList">
+              <i class="fas fa-th-list"></i>
+            </li>
+            <li class="list-inline-item" id="controllerGrid">
+              <i class="fas fa-th"></i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <img id="loading" src="assets/ajax-loader.gif" alt="Loading GIF" />
+
+    <main class="container">
+      <div class="jumbotron">
+        <h2></h2>
+        <div id="movies" class="row deck"></div>
+        <ul class="pagination">
+          <li class="page-item">
+            <a id="pageFirst" class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a id="pagePrevious" class="page-link" href="#"></a>
+          </li>
+          <li class="page-item active">
+            <a id="pageCurrent" class="page-link" href="#"></a>
+          </li>
+          <li class="page-item">
+            <a id="pageNext" class="page-link" href="#"></a>
+          </li>
+          <li class="page-item">
+            <a id="pageNext2" class="page-link" href="#"></a>
+          </li>
+          <li class="page-item">
+            <a id="pageNext3" class="page-link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="container">
+      <p>
+        Práctica Final - Tecnologías y herramientas para el desarrollo web ||
+        <span>Carlos Rodríguez Outerelo</span>, 2019
+      </p>
+    </footer>
+  </body>
+  <!-- Se importa jQuery+jQueryUI en el proyecto -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/jquery-ui.min.js"></script>
+
+  <!-- Se conecta con la web de FontAwesome para el uso de su iconografía -->
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Se importan scripts con funciones de Bootstrap (ejemplo: menú de hamburguesa) -->
+  <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://bootswatch.com/_assets/js/custom.js"></script>
+
+  <!-- Axios facilita las llamadas AJAX (API Rest) -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <!-- Se importa el script que define la funcionalidad de la aplicación -->
+  <script src="js/app.js"></script>
+
+  <!-- Se importa el registro del service worker -->
+  <script src="js/service-worker-register.js"></script>
+
+  <script>
+    loading();
+    if ("mode" in sessionStorage) {
+      var mode = sessionStorage.getItem("mode");
+      checkMode();
+    } else {
+      var mode = "movie";
+      sessionStorage.setItem("mode", mode);
+    }
+
+    if ("display" in sessionStorage) {
+      var display = sessionStorage.getItem("display");
+    } else {
+      var display = "grid";
+      sessionStorage.setItem("display", display);
+    }
+    console.log(display);
+
+    if (display == "grid") {
+      $("#controllerGrid").addClass("active");
+      $("#controllerList").removeClass("active");
+    } else if (display == "list") {
+      $("#controllerList").addClass("active");
+      $("#controllerGrid").removeClass("active");
+    }
+
+    page = 1;
+    pagination(page);
+    getGenre(page);
+
+    $("#pageFirst").on("click", function() {
+      page = 1;
+      getGenre(page);
+      pagination(page);
+    });
+    $("#pagePrevious").on("click", function() {
+      page -= 1;
+      getGenre(page);
+      pagination(page);
+    });
+    $("#pageNext").on("click", function() {
+      page += 1;
+      getGenre(page);
+      pagination(page);
+    });
+    $("#pageNext2").on("click", function() {
+      page += 2;
+      getGenre(page);
+      pagination(page);
+    });
+    $("#pageNext3").on("click", function() {
+      page += 3;
+      getGenre(page);
+      pagination(page);
+    });
+  </script>
+</html>
